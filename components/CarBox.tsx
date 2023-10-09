@@ -12,7 +12,7 @@ interface CarProps{
 const CarBox = ({car}:CarProps) => {
 
     const [isOpen,setIsOpen] = useState(false)
-    const { city_mpg, combination_mpg, cylinders, displacement, drive, year, transmission, model, make, highway_mpg, fuel_type, } = car;
+    const { city_mpg, drive, year, transmission, model, make} = car;
 
     const carRent = calculateCarRent(city_mpg,year)
 
